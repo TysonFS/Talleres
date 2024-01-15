@@ -1,0 +1,482 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Reboto", sans-serif ;
+    margin: 0;
+}
+ 
+h1{font-size: 5.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font: size 1.25em;}
+ol{
+    list-style: none;
+}
+
+
+/*justify-content: space-between;
+  height: 70px;
+  width: 70px;
+  margin: 0;
+  align-items: center;
+  padding: 15px;
+  display: flex;
+}*/
+
+header{
+  background-color: rgb(cadetblue);
+  display: flex;
+}
+
+.head{
+  background-color: rgb(180, 180, 180);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+header .logo{
+  display: flex;
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: blueviolet;
+  font-size: 1.6em;
+}
+
+.logo img{
+height: 50px;
+}
+
+header nav{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    color: black;
+}
+
+ul li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+header a{
+    font-size: 1em;
+    display: flex;
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: #000;
+    background-image:url("images/mak.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#hero h1 {
+  color: black;
+}
+
+#Goleadores {
+  background-color:rgb(180, 180, 180);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+#Goleadores h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px; /* Ajusta el espacio debajo del título */
+  color: black;
+}
+
+
+
+#Goleadores .img-container{
+  background-position: center center;
+  background-size: cover;
+  background-image: url("images/santos-recorted.jpg");
+  height: 500px;
+  width: 400px;
+}
+
+#Goleadores p{
+  text-align: center;
+  display: flex;
+
+}
+
+#Goleadores .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+
+#Goles {
+  background-color: rgb(180, 180, 180);
+  color: rgb(255, 255, 255);
+}
+
+#Goles .container{
+  text-align: center;
+  padding: 100px 0px;
+}
+
+#Goles p {
+  display: block;
+
+}
+
+#Goles .carta{
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.carta:first-child{
+background-image:url(images/garro.png);
+background-image: linear-gradient(
+  0deg,
+  rgba(0,0,0,0.5)
+  rgba(0,0,0,0.5)
+)
+
+
+}
+
+.carta:nth-child(2){
+  background-image: url(images/santos.png);
+  background-image: linear-gradient(
+    0deg,
+  rgba(0,0,0,0.5)
+  rgba(0,0,0,0.5)
+  );
+  
+}
+
+.carta:nth-child(3){
+  background-image: url(images/sosa.png);
+  background-image: linear-gradient(
+    0deg,
+  rgba(0,0,0,0.5)
+  rgba(0,0,0,0.5)
+  ) ;
+  
+}
+
+
+#images-mvp h3 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px; /* Ajusta el espacio debajo del título */
+  color: black;
+}
+
+#images-mvp {
+  color: black;
+}
+
+#images-mvp .container {
+  text-align: center;
+  padding: 50px 0; /* Ajusta el espacio alrededor del contenedor */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1100px;
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+#images-mvp .card {
+  background-color: grey;
+  background-position: center center;
+  background-size: cover;
+  padding: 20px; /* Ajusta el relleno dentro de la tarjeta */
+  margin: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.4s ease; /* Ajusta la duración de la transición */
+  cursor: pointer; /* Cambiado de 'default' a 'pointer' para indicar que es interactivo */
+  width: 300px; /* O ajusta según tu diseño */
+}
+
+#images-mvp .card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+#images-mvp .card img {
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+}
+
+#images-mvp .card .contenido {
+  padding: 15px;
+  text-align: center;
+}
+
+
+button {
+    --primary-color: #645bff;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 
+    5px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 10px;
+    color: var(--secondary-color);
+    padding: .7em .3em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.4em;
+    font-weight: bold;
+  }
+  
+  button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  button:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  button:hover .arrow:before {
+    right: 0;
+  }
+
+#Estadio{
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+#Estadio .container{
+  text-align: center;
+  justify-content: space-evenly;
+  display:flex;
+  padding: 50px 0;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+
+}
+
+
+#Estadio .card{
+  background-color: grey;
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  overflow: hidden;
+  transition:all 0.4s ease;
+  cursor: pointer;
+  width: 800px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+
+#Estadio .card img{
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+}
+
+#Estadio .card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+#Estadio  .card .contenido {
+  padding: 15px;
+  text-align: center;
+}
+
+.container h2{
+  font-size: 2.7em;
+}
+
+
+
+
+@media (min-width: 720px){
+  header{
+    position: fixed;
+    width: 100%;
+    color: #000;
+  }
+  
+  header.container{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 15px;
+    color: #000;
+  }
+
+ #Goleadores .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #Goleadores .img-container{
+    background-image: url("images/santos-recorted.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    width: 400px;  
+  }
+
+  #Goleadores .texto{
+    flex: 1;
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #Goleadores p{
+      display: block;
+      margin-top: 0;
+    }
+  
+  #Goleadores h2{
+    margin-top: 100px;  
+  }
+
+  #Goles .jugadores{
+    display: flex;
+    justify-content: center;
+  }
+
+  #Goles p{
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  #Goles h3{
+    margin-top: 0;
+  }
+
+  #Goles h2{
+    font-size: 4.3em;
+  }
+
+  #Goles .carta{
+    padding: 50px;
+    background-size: 100% px;
+    background-repeat: no-repeat;
+    background-position-y: 0 ;
+    background-color: rgb(50,50,50,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  }
+
+  .carta:first-child{
+    background-image:url("images/garro.png");
+    background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5)
+      rgba(0,0,0,0.5))
+    
+    }
+    
+    .carta:nth-child(2){
+      background-image: linear-gradient(
+        0deg,
+      rgba(0,0,0,0.5)
+      rgba(0,0,0,0.5)
+      ) 
+      ,url("images/santos.png");
+      
+    }
+    
+    
+    .carta:nth-child(3){
+      background-image: linear-gradient(
+        0deg,
+      rgba(0,0,0,0.5)
+      rgba(0,0,0,0.5)
+      ) 
+      ,url("images/sosa.png");
+    }
+      
+    header a{
+      font-size: 1em;
+      display: flex;
+      padding: 5px 12px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+    }
+
+}
